@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragnarök Customs | Café Racers con Alma Vikinga</title>
+    <meta name="description" content="Taller en Quito donde forjamos Café Racers como armas de los dioses nórdicos.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/Vegvisir.jpeg" alt="Ragnarök Customs">
+                <p class="runa">ᚱᚨᚷᚾᚨᚱᛟᚲ</p>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar motos, piezas...">
+                <button id="search-btn">🔍</button>
+            </div>
+            
+            <nav aria-label="Menú principal">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Valhalla</a></li>
+                    <li><a href="nosotros.html">El Clan</a></li>
+                    <li><a href="custom.html">Forja</a></li>
+                    <li><a href="#contacto">Cuervos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content container">
+            <h1 class="runa">FORJAMOS <span>MÁQUINAS</span> PARA LA BATALLA</h1>
+            <p>En las calles de Quito, tus enemigos temerán el rugido de tu Café Racer.</p>
+            <a href="custom.html" class="btn btn-primary">¡INICIA TU LEYENDA!</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title runa">ELIGE TU DESTINO</h2>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="cafe-racer">Café Racer</button>
+                <button class="filter-btn" data-category="classic">Clásicas</button>
+                <button class="filter-btn" data-category="custom">Personalizadas</button>
+            </div>
+            <div class="grid-categorias">
+                <a href="custom.html#ritual" class="card" data-category="custom">
+                    <h3 class="card-title">Ritual de Motor</h3>
+                    <p>Reconstrucción completa</p>
+                </a>
+                <a href="custom.html#runas" class="card" data-category="custom">
+                    <h3 class="card-title">Grabado de Runas</h3>
+                    <p>Personalización única</p>
+                </a>
+                <a href="custom.html#estilo" class="card" data-category="cafe-racer">
+                    <h3 class="card-title">Forja de Estilo</h3>
+                    <p>Café Racer clásico</p>
+                </a>
+                <a href="custom.html#accesorios" class="card" data-category="accessories">
+                    <h3 class="card-title">Accesorios</h3>
+                    <p>Componentes únicos</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title runa">LOS CUERVOS DE ODÍN</h2>
+            <div class="grid-productos">
+                <article class="card" data-searchable="Fenrir CB750 Café Racer con runas" data-category="cafe-racer">
+                    <img src="imagenes/igm250runas.jpg" alt="Café Racer 'Fenrir'" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Fenrir CB750</h3>
+                        <p class="card-text">Moto estilo Cafe Racer con runas de protección a los costados.</p>
+                        <div class="card-footer">
+                            <span class="price">$12,500</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-product-id="1" 
+                                    data-product-name="Fenrir CB750" 
+                                    data-product-price="12500">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card" data-searchable="Valkyrie XS650 Clásica con Vegvisir" data-category="classic">
+                    <img src="imagenes/igm250vegvisir.jpg" alt="Yamaha XS650 'Valkyrie'" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Valkyrie XS650</h3>
+                        <p class="card-text">Moto estilo clásico con grabados de la brújula nórdica Vegvisir.</p>
+                        <div class="card-footer">
+                            <span class="price">$14,200</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-product-id="2" 
+                                    data-product-name="Valkyrie XS650" 
+                                    data-product-price="14200">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card" data-searchable="Mjölnir XSR900 Personalizada" data-category="custom">
+                    <img src="imagenes/bmw cafe racer 2.jpg" alt="Nuevo modelo" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Mjölnir XSR900</h3>
+                        <p class="card-text">El martillo de Thor hecho moto. Poder puro con estilo nórdico.</p>
+                        <div class="card-footer">
+                            <span class="price">$18,750</span>
+                            <button class="btn btn-primary add-to-cart" 
+                                    data-product-id="3" 
+                                    data-product-name="Mjölnir XSR900" 
+                                    data-product-price="18750">
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p><strong>Ragnarök Customs</strong></p>
+                    <p>Taller en las Tierras de Quito (Av. Occidental 204)</p>
+                    <p>📞 +593 99 888 7777</p>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="#"><img src="imagenes/instagram_logo_icon_257003.webp" alt="Instagram"></a>
+                    <a href="#"><img src="imagenes/WhatsApp.svg.webp" alt="WhatsApp"></a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p class="runa">© 2023 Ragnarök Customs. <span>ᛖᛚ ᛏᚨᛚᛖᚱ ᛞᛖ ᛚᛟᛋ ᛞᛁᛟᛋᛖᛋ</span></p>
+            </div>
+        </div>
+        <div class="footer-info">   
+            <button id="contact-btn" class="btn btn-primary mt-4">ENVIAR UN CUERVO MENSAJERO</button>
+        </div>
+    </footer>
+
+    <div class="cart-indicator">
+        <span id="cart-count">0</span>
+        🛒
+    </div>
+
+    <script src="js/search.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

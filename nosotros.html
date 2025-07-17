@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Clan | Ragnarök Customs</title>
+    <meta name="description" content="Fundado por guerreros modernos que intercambiaron espadas por llaves inglesas.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/Vegvisir.jpeg" alt="Ragnarök Customs">
+                <p class="runa">ᚱᚨᚷᚾᚨᚱᛟᚲ</p>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar en el clan...">
+                <button id="search-btn">🔍</button>
+            </div>
+            
+            <nav aria-label="Menú principal">
+                <ul>
+                    <li><a href="index.html">Valhalla</a></li>
+                    <li><a href="nosotros.html" aria-current="page">El Clan</a></li>
+                    <li><a href="custom.html">Forja</a></li>
+                    <li><a href="#contacto">Cuervos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about section">
+            <h1 class="section-title runa">EL CLAN <span>RAGNARÖK</span></h1>
+            <p>Somos herreros modernos. Forjamos motos que desafían el tiempo, como los barcos de los vikingos.</p>
+            <img src="imagenes/Taller.jpg" alt="Taller Ragnarök en Quito">
+        </section>
+
+        <section class="section">
+            <h2 class="section-title runa">NUESTROS GUERREROS</h2>
+            <div class="grid-productos" id="members-container">
+                <!-- Los miembros se cargarán con JavaScript -->
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="section-title runa">NUESTRA SAGA</h2>
+                    <p>Fundado en 2015 en las tierras altas de Quito, Ragnarök Customs nació de la pasión por las motos clásicas y la mitología nórdica. Lo que comenzó como un pequeño taller de reparaciones se convirtió en un santuario para los amantes de las Café Racer con alma vikinga.</p>
+                    <p>Cada moto que sale de nuestro taller lleva no solo nuestro nombre, sino la esencia de los dioses nórdicos. Nos inspiramos en los barcos vikingos - elegantes, rápidos y letales - para crear máquinas que dominen tanto las calles urbanas como los caminos abiertos.</p>
+                    <p class="text-yellow-600 font-bold">No construimos motos. Forjamos leyendas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p><strong>Ragnarök Customs</strong></p>
+                    <p>Taller en las Tierras de Quito (Av. Occidental 204)</p>
+                    <p>📞 +593 99 888 7777</p>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="#"><img src="imagenes/instagram_logo_icon_257003.webp" alt="Instagram"></a>
+                    <a href="#"><img src="imagenes/WhatsApp.svg.webp" alt="WhatsApp"></a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p class="runa">© 2023 Ragnarök Customs. <span>ᛖᛚ ᛏᚨᛚᛖᚱ ᛞᛖ ᛚᛟᛋ ᛞᛁᛟᛋᛖᛋ</span></p>
+            </div>
+        </div>
+        <div class="footer-info">   
+            <button id="contact-btn" class="btn btn-primary mt-4">ENVIAR UN CUERVO MENSAJERO</button>
+        </div>
+    </footer>
+
+    <div class="cart-indicator">
+        <span id="cart-count">0</span>
+        🛒
+    </div>
+
+    <script src="js/search.js"></script>
+    <script src="js/members.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

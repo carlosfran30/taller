@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forja | Ragnarök Customs</title>
+    <meta name="description" content="Servicios de personalización para tu Café Racer en Quito. Desde restauración hasta builds completas.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/Vegvisir.jpeg" alt="Ragnarök Customs">
+                <p class="runa">ᚱᚨᚷᚾᚨᚱᛟᚲ</p>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar servicios...">
+                <button id="search-btn">🔍</button>
+            </div>
+            
+            <nav aria-label="Menú principal">
+                <ul>
+                    <li><a href="index.html">Valhalla</a></li>
+                    <li><a href="nosotros.html">El Clan</a></li>
+                    <li><a href="custom.html" aria-current="page">Forja</a></li>
+                    <li><a href="#contacto">Cuervos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1 class="section-title runa">FORJA TU <span>LEYENDA</span></h1>
+            <p class="text-center max-w-2xl mx-auto">Desde reconstrucciones completas hasta detalles finales con símbolos nórdicos, cada moto que creamos es única como una espada vikinga.</p>
+        </section>
+
+        <section id="servicios">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="motor">Motor</button>
+                <button class="filter-btn" data-category="estetica">Estética</button>
+                <button class="filter-btn" data-category="performance">Performance</button>
+            </div>
+            
+            <div class="servicios-grid">
+                <article id="ritual" class="servicio" data-searchable="Ritual de Motor Reconstrucción completa" data-category="motor">
+                    <h2 class="runa">Ritual de Motor</h2>
+                    <ul>
+                        <li>Reconstrucción completa de motores</li>
+                        <li>Pintura personalizada con símbolos nórdicos</li>
+                        <li>Ajuste de carburación/inyección</li>
+                        <li>Conversión a Café Racer</li>
+                    </ul>
+                    <div>
+                        <span class="price">Desde $2,500</span>
+                        <button class="btn btn-primary w-full mt-4 add-to-cart" 
+                                data-product-id="serv1" 
+                                data-product-name="Ritual de Motor" 
+                                data-product-price="2500">
+                            Cotizar proyecto
+                        </button>
+                    </div>
+                </article>
+
+                <article id="runas" class="servicio" data-searchable="Grabado de Runas Personalización única" data-category="estetica">
+                    <h2 class="runa">Grabado de Runas</h2>
+                    <ul>
+                        <li>Tanque personalizado con runas de protección</li>
+                        <li>Asientos de cuero con patrones vikingos</li>
+                        <li>Grabado láser de símbolos nórdicos</li>
+                        <li>Incrustaciones de metales preciosos</li>
+                    </ul>
+                    <div>
+                        <span class="price">Desde $800</span>
+                        <button class="btn btn-primary w-full mt-4 add-to-cart" 
+                                data-product-id="serv2" 
+                                data-product-name="Grabado de Runas" 
+                                data-product-price="800">
+                            Cotizar proyecto
+                        </button>
+                    </div>
+                </article>
+
+                <article id="estilo" class="servicio" data-searchable="Forja de Estilo Café Racer clásico" data-category="estetica">
+                    <h2 class="runa">Forja de Estilo</h2>
+                    <ul>
+                        <li>Diseño personalizado Café Racer</li>
+                        <li>Modificación de chasis y suspensión</li>
+                        <li>Sistemas de escape personalizados</li>
+                        <li>Iluminación con temática nórdica</li>
+                    </ul>
+                    <div>
+                        <span class="price">Desde $3,200</span>
+                        <button class="btn btn-primary w-full mt-4 add-to-cart" 
+                                data-product-id="serv3" 
+                                data-product-name="Forja de Estilo" 
+                                data-product-price="3200">
+                            Cotizar proyecto
+                        </button>
+                    </div>
+                </article>
+
+                <article id="accesorios" class="servicio" data-searchable="Accesorios Componentes únicos" data-category="performance">
+                    <h2 class="runa">Accesorios</h2>
+                    <ul>
+                        <li>Manillares personalizados</li>
+                        <li>Espejos retrovisores con runas</li>
+                        <li>Protectores de motor grabados</li>
+                        <li>Kits de iluminación Valkyrie</li>
+                    </ul>
+                    <div>
+                        <span class="price">Desde $150</span>
+                        <button class="btn btn-primary w-full mt-4 add-to-cart" 
+                                data-product-id="serv4" 
+                                data-product-name="Accesorios" 
+                                data-product-price="150">
+                            Cotizar proyecto
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title runa">TRABAJOS DE LOS DIOSES</h2>
+            <div class="galeria-grid">
+                <img src="imagenes/igm250runas.jpg" alt="Trabajo Ragnarök 1">
+                <img src="imagenes/igm250vegvisir.jpg" alt="Trabajo Ragnarök 2">
+                <img src="imagenes/bmw cafe racer 2.jpg" alt="Trabajo Ragnarök 3">
+                <img src="imagenes/bmw cafe racer.jpg" alt="Trabajo Ragnarök 4">
+                <img src="imagenes/Harley cafe racer.webp" alt="Trabajo Ragnarök 5">
+                <img src="imagenes/yamahacaferacer.webp" alt="Trabajo Ragnarök 6">
+            </div>
+        </section>
+
+        <section class="text-center my-12">
+            <a href="#contacto" class="btn btn-primary inline-block">¡DESAFÍA A LOS DIOSES!</a>
+        </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p><strong>Ragnarök Customs</strong></p>
+                    <p>Taller en las Tierras de Quito (Av. Occidental 204)</p>
+                    <p>📞 +593 99 888 7777</p>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="#"><img src="imagenes/instagram_logo_icon_257003.webp" alt="Instagram"></a>
+                    <a href="#"><img src="imagenes/WhatsApp.svg.webp" alt="WhatsApp"></a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p class="runa">© 2023 Ragnarök Customs. <span>ᛖᛚ ᛏᚨᛚᛖᚱ ᛞᛖ ᛚᛟᛋ ᛞᛁᛟᛋᛖᛋ</span></p>
+            </div>
+        </div>
+        <div class="footer-info">   
+            <button id="contact-btn" class="btn btn-primary mt-4">ENVIAR UN CUERVO MENSAJERO</button>
+        </div>
+    </footer>
+
+    <div class="cart-indicator">
+        <span id="cart-count">0</span>
+        🛒
+    </div>
+
+    <script src="js/search.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
